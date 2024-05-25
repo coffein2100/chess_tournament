@@ -14,13 +14,14 @@ a{
     text-decoration: none;
 }
 .preview {
+    position: relative;
     height: 812px;
     background: #e6dbcf;
     background-image: url("../img/backgound_shees.png");
-    background-position-x: -350px;
+    background-position-x: -390px;
     background-position-y: bottom;
     background-repeat: no-repeat;
-    background-size: 800px 390px;
+    background-size: 900px 390px; 
 }
 
 .preview__headtext {
@@ -45,7 +46,7 @@ a{
     color: #313131;
     margin-bottom: 32px;
     margin-top: 24px;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .preview__wrapper {
@@ -72,6 +73,10 @@ a{
     background: #1f1f1f;
     margin-bottom: 14px;
 }
+.preview__help:hover {
+    background: #fbce51;
+    color: #1f1f1f;
+}
 
 .preview__about {
     font-weight: 500;
@@ -84,12 +89,89 @@ a{
     border-radius: 66px;
     padding: 18px 20px
 }
+.preview__about:hover {
+    background: #1f1f1f;
+    color: #fff;
+}
+/* начало секция help*/
+.help__firstcontainer {
+    display: flex;
+    flex-direction: column;
+}
 
-.preview__background {
+.help__firsttext{
+    padding-top: 86px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #313131;
+    margin-bottom: 24px;
+}
+.help__secondttext{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #313131;
+    margin-bottom: 34px;
+}
+.help__sheesgame{
+    width: 335px;
+    height: 212px;
+    margin-bottom: 24px;
+}
+.red {
+    color: #f54932;
+}
+.help__bander{
+    width: 335px;
+    height: 402px;
+    margin-bottom: 24px;
+}
+.help__secondcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.help__place{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+    margin-bottom: 12px;
+}
+.help__bold {
+    position: relative;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+}
+.help__bold::before{
+    content: '';
+    display: block;
+    height: 2px;
+    background: #D0D0D0;
+    width: 100%; 
     position: absolute;
-    height: 400px;
-    bottom:0;
-    top:70%;
-    left:-100px;
-    z-index: -1;
+    bottom: -16px;
+}
+.help__last{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+
+    margin-bottom: 40px;
+}
+.help__question{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #3057a2;
+}
+.help__mobile {
+    margin-bottom: 120px;
 }
