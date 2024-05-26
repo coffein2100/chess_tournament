@@ -254,6 +254,7 @@ a{
   background: #fbce51;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 .stage__slidenow {
     width: 10px;
@@ -263,4 +264,199 @@ a{
 }
 .slideactive {
     background: #313131;
+}
+.stage__slides {
+list-style-type: none;
+padding: 0;
+}
+.stage__slidetext1 {
+    position: relative;
+    padding-left: 72px;
+    margin-bottom: 28px;
+    text-align: left;
+    padding-right: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #313131;   
+    word-break: break-word; 
+}
+.stage__slidetext2 {
+    position: relative;
+    padding-left: 72px;
+    margin-bottom: 28px;
+    text-align: left;
+    padding-right: 34px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #313131;   
+    word-break: break-word; 
+}
+.stage__slidetext3 {
+    position: relative;
+    padding-left: 72px;
+    margin-bottom: 28px;
+    text-align: left;
+    padding-right: 34px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #313131;   
+    word-break: break-word; 
+}
+.stage__slidetext4 {
+    position: relative;
+    padding-left: 72px;
+    margin-bottom: 28px;
+    text-align: left;
+    padding-right: 34px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #313131;   
+    word-break: break-word; 
+}
+.stage__slidetext5 {
+    position: relative;
+    padding-left: 72px;
+    margin-bottom: 28px;
+    text-align: left;
+    padding-right: 34px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #313131;   
+    word-break: break-word; 
+}
+.stage__slidetext6 {
+    position: relative;
+    padding-left: 72px;
+    margin-bottom: 28px;
+    text-align: left;
+    padding-right: 34px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #313131;   
+    word-break: break-word; 
+}
+.stage__slidetext7 {
+    position: relative;
+    padding-left: 72px;
+    margin-bottom: 28px;
+    text-align: left;
+    padding-right: 34px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #313131;   
+    word-break: break-word; 
+}
+.stage__slidetext1::before {
+    position: absolute;
+    content: '1';
+    top:0px;
+    left: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.stage__slidetext2::before {
+    position: absolute;
+    content: '2';
+    top:0px;
+    left: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.stage__slidetext3::before {
+    position: absolute;
+    content: '3';
+    top:0px;
+    left: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.stage__slidetext4::before {
+    position: absolute;
+    content: '4';
+    top:0px;
+    left: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.stage__slidetext5::before {
+    position: absolute;
+    content: '5';
+    top:0px;
+    left: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.stage__slidetext6::before {
+    position: absolute;
+    content: '6';
+    top:0px;
+    left: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.stage__slidetext7::before {
+    position: absolute;
+    content: '7';
+    top:0px;
+    left: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#stage__slides{
+    position: relative;
+}
+.stage__slide{
+    position: absolute;
+	left: 0px;
+	top: 62px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+}
+.showing{
+    opacity: 1;
+	z-index: 2;
 }
