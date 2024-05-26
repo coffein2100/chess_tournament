@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
     width: 335px;
 }
-h1,p {
+h1, h2, p {
     margin: 0;
 }
 
@@ -140,6 +140,7 @@ a{
     line-height: 120%;
     color: #313131;
     margin-bottom: 12px;
+    word-break: break-word;
 }
 .help__bold {
     position: relative;
@@ -148,6 +149,7 @@ a{
     font-size: 20px;
     line-height: 120%;
     color: #313131;
+    word-break: break-word;
 }
 .help__bold::before{
     content: '';
@@ -163,6 +165,7 @@ a{
     font-size: 20px;
     line-height: 120%;
     color: #313131;
+    word-break: break-word;
 
     margin-bottom: 40px;
 }
@@ -171,7 +174,93 @@ a{
     font-size: 18px;
     line-height: 120%;
     color: #3057a2;
+    word-break: break-word;
 }
 .help__mobile {
     margin-bottom: 120px;
+}
+
+/*section stage */
+
+.stage__headtext{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #313131;
+    margin-bottom: 12px;
+    word-break: break-word;
+}
+.stage__about {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #3057a2; 
+    word-break: break-word;  
+}
+.stage__head {
+    margin-bottom: 148px;
+}
+.stage__caruselblock{
+    position: relative;
+    min-height: 300px;
+    background-color: #e6dbcf;
+    background-blend-mode: color-burn;
+    background-image: url("../img/mask.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+}
+.stage__caruselblock::before{
+    content: '';
+    top:-120px;
+    display: block;
+    height: 182px;
+    background-image: url("../img/plane.png");
+    background-size: 335px 185px;
+    width: 100%; 
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.buttons {
+    margin: 0 auto;
+    width: 178px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls__disabled{
+    background: #d6d6d6;
+    color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+}
+.controls{
+    background: #313131;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+}
+.controls:hover,
+.controls:focus{
+  background: #fbce51;
+  color: #fff;
+  border: none;
+}
+.stage__slidenow {
+    width: 10px;
+    height: 10px;
+    background: #d9d9d9;
+    border-radius: 50%;
+}
+.slideactive {
+    background: #313131;
 }
