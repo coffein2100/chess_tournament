@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клуб четырех коней</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalaize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -23,8 +24,8 @@
                 <a class="preview__about" href="#about">Подробнее о турнире</a>
             </div>
         </div>
-        <marquee style="position: relative; bottom: -310px;height: 18px; color: #fff;padding-top: 10px;padding-bottom: 15px;
-        font-weight: 400;font-size: 22px;line-height: 100%;text-transform: uppercase;" bgcolor="#f54932" onmouseout="this.start()" onmouseover="this.stop()"><span style="">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперёд не только культуру, но и экономику! Лёд тронулся, господа присяжные заседатели!</span></marquee>
+        <marquee style="position: relative; bottom: -34%;height: 18px; color: #fff;padding-top: 10px;padding-bottom: 15px;
+        font-weight: 400;font-size: 22px;line-height: 100%;text-transform: uppercase;z-index: 5;" bgcolor="#f54932" onmouseout="this.start()" onmouseover="this.stop()"><span style="">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперёд не только культуру, но и экономику! Лёд тронулся, господа присяжные заседатели!</span></marquee>
     </header>
     <section class="help">
         <div class="container">
@@ -96,5 +97,76 @@
             </div>
         </div>
     </section>
+    <section class="participants">
+        <div class="container">
+            <div class="participants__mobile">
+                <h2 class="participants__headtext">Участники турнира</h2>
+                <div class="participants__carusel">
+                <ul class="participants__slides" id="participants__slides">
+                    <li class="participants__slide show ">
+                        <div class="participants__card">
+                            <img class="participants__img" src="img/participant_of_the tournament.png" alt="Фото участника"/>
+                            <p class="participants__name">Хозе-Рауль Капабланка</p>
+                            <p class="participants__status">Чемпион мира по шахматам</p>
+                            <a href="#" class="participants__link">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="participants__slide">
+                        <div class="participants__card">
+                            <img class="participants__img" src="img/participant_of_the tournament.png" alt="Фото участника"/>
+                            <p class="participants__name">Эммануил Ласкер</p>
+                            <p class="participants__status">Чемпион мира по шахматам</p>
+                            <a href="#" class="participants__link">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="participants__slide">
+                        <div class="participants__card">
+                            <img class="participants__img" src="img/participant_of_the tournament.png" alt="Фото участника"/>
+                            <p class="participants__name">Александр Алехин</p>
+                            <p class="participants__status">Чемпион мира по шахматам</p>
+                            <a href="#" class="participants__link">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="participants__slide">
+                        <div class="participants__card">
+                            <img class="participants__img" src="img/participant_of_the tournament.png" alt="Фото участника"/>
+                            <p class="participants__name">Арон Нимцович</p>
+                            <p class="participants__status">Чемпион мира по шахматам</p>
+                            <a href="#" class="participants__link">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="participants__slide">
+                        <div class="participants__card">
+                            <img class="participants__img" src="img/participant_of_the tournament.png" alt="Фото участника"/>
+                            <p class="participants__name">Рихард Рети</p>
+                            <p class="participants__status">Чемпион мира по шахматам</p>
+                            <a href="#" class="participants__link">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="participants__slide">
+                        <div class="participants__card">
+                            <img class="participants__img" src="img/participant_of_the tournament.png" alt="Фото участника"/>
+                            <p class="participants__name">Остап Бендер</p>
+                            <p class="participants__status">Гроссмейстер</p>
+                            <a href="#" class="participants__link">Подробнее</a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="participants__buttons">
+                    <button class="controls" id="participants_previous">&lt;</button>
+                    <span class="participants__numbers">1 / 6</span>
+                    <button class="controls" id="participants_next">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <marquee style="position: absolute; top: 0;height: 18px; color: #fff;padding-top: 10px;padding-bottom: 15px;
+        font-weight: 400;font-size: 22px;line-height: 100%;text-transform: uppercase;z-index: 5;" bgcolor="#f54932" onmouseout="this.start()" onmouseover="this.stop()"><span style="">Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперёд не только культуру, но и экономику! Лёд тронулся, господа присяжные заседатели!</span></marquee>
+        <div class="container">
+            <p class="footer__text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+        </div>
+    </footer>
 </body>
 </html> 
