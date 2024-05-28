@@ -41,7 +41,7 @@ a{
     background-position-x: -410px;
     background-position-y: bottom;
     background-repeat: no-repeat;
-    background-size: 900px 380px; 
+    background-size: 890px 380px; 
     @media (min-width: 1225px) {
         height: 700px;
         background-position-x: -100px;
