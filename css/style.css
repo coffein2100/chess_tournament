@@ -163,7 +163,7 @@ a{
     color: #fff;
 }
 /* начало секция help*/
-.help__secondcontainerrow{
+.help__secondcontainercolumn{
     width: 704px;
     display: flex;
     flex-direction: column;
@@ -258,6 +258,20 @@ a{
     flex-direction: column;
     flex-wrap: wrap;
 }
+.help__tabletr {
+    position: relative;
+    display: grid;
+    grid-template-columns: 48% 52%;
+}
+.help__tabletr:not(:last-child)::before{
+    content: '';
+    display: block;
+    height: 2px;
+    background: #d0d0d0;
+    width: 100%; 
+    position: absolute;
+    bottom: 0;
+}
 .help__place{
     font-weight: 400;
     font-size: 20px;
@@ -265,6 +279,11 @@ a{
     color: #313131;
     margin-bottom: 12px;
     word-break: break-word;
+    @media (min-width: 1225px) {
+        margin-bottom: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 .help__bold {
     position: relative;
@@ -274,6 +293,12 @@ a{
     line-height: 120%;
     color: #313131;
     word-break: break-word;
+    @media (min-width: 1225px) {
+        margin-bottom: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+    }
 }
 .help__bold::before{
     content: '';
@@ -284,6 +309,25 @@ a{
     position: absolute;
     bottom: -16px;
 }
+@media (min-width: 1225px) {
+    .help__bold::before{
+        display: none;
+    }
+    
+}
+.help__table{
+    position: relative;
+}
+.help__table::before{
+    content: '';
+    display: block;
+    height: 85%;
+    background: #d0d0d0;
+    width: 2px; 
+    position: absolute;
+    top: 0;
+    left: 48%;
+}
 .help__last{
     font-weight: 600;
     font-size: 20px;
@@ -291,6 +335,11 @@ a{
     color: #313131;
     word-break: break-word;
     margin-bottom: 40px;
+    @media (min-width: 1225px) {
+        margin-bottom: 0;  
+        padding-top: 16px;
+        padding-left: 16px;
+    }
 }
 .help__question{
     font-weight: 400;
@@ -298,6 +347,9 @@ a{
     line-height: 120%;
     color: #3057a2;
     word-break: break-word;
+    @media (min-width: 1225px) {
+        font-size: 20px;
+    }
 }
 .help__mobile {
     margin-bottom: 120px;
