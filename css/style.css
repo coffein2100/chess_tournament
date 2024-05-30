@@ -127,12 +127,31 @@ a{
     background: #1f1f1f;
     margin-bottom: 14px;
     @media (min-width: 1225px) {
+        display: none;
+    }
+}
+.preview__help:hover {
+    background: #fbce51;
+    color: #1f1f1f;
+}
+.preview__helpdesktop {
+    display: none;
+    @media (min-width: 1225px) {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #fff;
+        border-radius: 66px;
+        background: #1f1f1f;
+        margin-bottom: 14px;
         padding: 20px 49px 20px 49px;
         width: 165px;
         margin-bottom: 0;
     }
 }
-.preview__help:hover {
+.preview__helpdesktop:hover{
     background: #fbce51;
     color: #1f1f1f;
 }
@@ -149,6 +168,24 @@ a{
     padding: 18px 20px;
     word-wrap: break-word;
     @media (min-width: 1225px) {
+        display: none;
+    }
+}
+.preview__about:hover {
+    background: #1f1f1f;
+    color: #fff;
+}
+.preview__aboutdesktop {
+    display: none;
+    @media (min-width: 1225px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #1f1f1f;
+        opacity: 0.9;
+        border-radius: 66px;
+        word-wrap: break-word;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,7 +195,7 @@ a{
         width: 145px;
     }
 }
-.preview__about:hover {
+.preview__aboutdesktop:hover {
     background: #1f1f1f;
     color: #fff;
 }
@@ -359,6 +396,17 @@ a{
 }
 
 /*section stage */
+.stage__mobile{
+    @media (min-width: 1225px) {
+        display: none;
+    }
+}
+.stage__desktop {
+    display: none;
+    @media (min-width: 1225px) {
+        display: block;
+    }
+}
 .stage {
     margin-bottom: 120px;
 }
@@ -370,16 +418,36 @@ a{
     color: #313131;
     margin-bottom: 12px;
     word-break: break-word;
+    @media (min-width: 1225px) {
+        position: relative;
+        font-size: 54px;
+        width: 806px;
+        padding-right: 155px;
+    }
 }
 .stage__about {
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     color: #3057a2; 
-    word-break: break-word;  
+    word-break: break-word;
+    @media (min-width: 1225px) {
+        position: absolute;
+        top:65px;
+        left: 290px;
+        display: block;
+        min-height: 48px;
+        width: 280px;
+        font-size: 20px;
+        text-align: left;
+        white-space: break-spaces;
+    }  
 }
 .stage__head {
     margin-bottom: 148px;
+    @media (min-width: 1225px) {
+        margin-bottom: 54px; 
+    }
 }
 .stage__caruselblock{
     position: relative;
@@ -448,6 +516,10 @@ a{
     list-style-type: none;
     padding: 0;
 }
+.stage__plansli{
+    min-height: 112px;
+    background-color: #e6dbcf;;
+}
 .stage__slidetext1 {
     position: relative;
     padding-left: 72px;
@@ -459,6 +531,13 @@ a{
     line-height: 120%;
     color: #313131;   
     word-break: break-word; 
+    @media (min-width: 1225px) {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }
 .stage__slidetext2 {
     position: relative;
@@ -471,6 +550,13 @@ a{
     line-height: 120%;
     color: #313131;   
     word-break: break-word; 
+    @media (min-width: 1225px) {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }
 .stage__slidetext3 {
     position: relative;
@@ -483,6 +569,13 @@ a{
     line-height: 120%;
     color: #313131;   
     word-break: break-word; 
+    @media (min-width: 1225px) {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }
 .stage__slidetext4 {
     position: relative;
@@ -495,6 +588,13 @@ a{
     line-height: 120%;
     color: #313131;   
     word-break: break-word; 
+    @media (min-width: 1225px) {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }
 .stage__slidetext5 {
     position: relative;
@@ -507,6 +607,13 @@ a{
     line-height: 120%;
     color: #313131;   
     word-break: break-word; 
+    @media (min-width: 1225px) {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }
 .stage__slidetext6 {
     position: relative;
@@ -519,6 +626,13 @@ a{
     line-height: 120%;
     color: #313131;   
     word-break: break-word; 
+    @media (min-width: 1225px) {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }
 .stage__slidetext7 {
     position: relative;
@@ -531,6 +645,13 @@ a{
     line-height: 120%;
     color: #313131;   
     word-break: break-word; 
+    @media (min-width: 1225px) {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
 }
 .stage__slidetext1::before {
     position: absolute;
@@ -545,6 +666,12 @@ a{
     border-radius: 50%;
     background-color: #fff;
 }
+@media (min-width: 1225px) {
+    .stage__slidetext1::before{
+        top:20px;
+    }
+}
+
 .stage__slidetext2::before {
     position: absolute;
     content: '2';
@@ -557,6 +684,11 @@ a{
     height: 36px;
     border-radius: 50%;
     background-color: #fff;
+}
+@media (min-width: 1225px) {
+    .stage__slidetext2::before{
+        top:20px;
+    }
 }
 .stage__slidetext3::before {
     position: absolute;
@@ -571,6 +703,11 @@ a{
     border-radius: 50%;
     background-color: #fff;
 }
+@media (min-width: 1225px) {
+    .stage__slidetext3::before{
+        top:20px;
+    }
+}
 .stage__slidetext4::before {
     position: absolute;
     content: '4';
@@ -583,6 +720,11 @@ a{
     height: 36px;
     border-radius: 50%;
     background-color: #fff;
+}
+@media (min-width: 1225px) {
+    .stage__slidetext4::before{
+        top:20px;
+    }
 }
 .stage__slidetext5::before {
     position: absolute;
@@ -597,6 +739,11 @@ a{
     border-radius: 50%;
     background-color: #fff;
 }
+@media (min-width: 1225px) {
+    .stage__slidetext5::before{
+        top:20px;
+    }
+}
 .stage__slidetext6::before {
     position: absolute;
     content: '6';
@@ -610,6 +757,11 @@ a{
     border-radius: 50%;
     background-color: #fff;
 }
+@media (min-width: 1225px) {
+    .stage__slidetext6::before{
+        top:20px;
+    }
+}
 .stage__slidetext7::before {
     position: absolute;
     content: '7';
@@ -622,6 +774,11 @@ a{
     height: 36px;
     border-radius: 50%;
     background-color: #fff;
+}
+@media (min-width: 1225px) {
+    .stage__slidetext7::before{
+        top:20px;
+    }
 }
 #stage__slides{
     position: relative;
@@ -638,6 +795,12 @@ a{
 .showing{
     opacity: 1;
 	z-index: 2;
+}
+.stage__plans{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 374px 374px 374px;
+    gap: 20px;
 }
 /*participants*/
 
