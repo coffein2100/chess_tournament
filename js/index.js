@@ -70,3 +70,44 @@ nextParticipants.onclick = function(){
 previousParticipants.onclick = function(){
 	previousSlideParticipants();
 };
+//desktop участники
+var slidesParticipantsDesktop = document.querySelectorAll('#participants__slidesdesktop .participants__slidedesktop');
+var currentSlideParticipantsDesktop = 0;
+var slideIntervalParticipantsDesktop = setInterval(nextSlideParticipantsDesktop,4000);
+var playingParticipantsDesktop = true;
+var nextParticipantsDesktop = document.getElementById('participants__nextdeskop');
+var previousParticipantsDesktop = document.getElementById('participants__previousdeskop');
+var numberParticipantsDesktop = document.querySelector('.participants__numbersdeskop')
+
+function nextSlideParticipantsDesktop(){
+	goToSlideParticipantsDesktop(currentSlideParticipantsDesktop+1);
+	console.log(currentSlideParticipantsDesktop);
+	if(currentSlideParticipantsDesktop ==0){
+		numberParticipantsDesktop.innerHTML=currentSlideParticipantsDesktop+ 3 + " " + "/ " + "6";
+	}
+	if(currentSlideParticipantsDesktop == 1){
+		numberParticipantsDesktop.innerHTML=currentSlideParticipantsDesktop + 5 + " " + "/ " + "6";
+	}
+	
+}
+function previousSlideParticipantsDesktop(){
+	goToSlideParticipantsDesktop(currentSlideParticipantsDesktop-1);
+	if(currentSlideParticipantsDesktop ==0){
+		numberParticipantsDesktop.innerHTML=currentSlideParticipantsDesktop+ 3 + " " + "/ " + "6";
+	}
+	if(currentSlideParticipantsDesktop == 1){
+		numberParticipantsDesktop.innerHTML=currentSlideParticipantsDesktop + 5 + " " + "/ " + "6";
+	}
+}
+
+function goToSlideParticipantsDesktop(n){
+	slidesParticipantsDesktop[currentSlideParticipantsDesktop].className = 'participants__slidedesktop';
+	currentSlideParticipantsDesktop = (n+slidesParticipantsDesktop.length)%slidesParticipantsDesktop.length;
+	slidesParticipantsDesktop[currentSlideParticipantsDesktop].className = 'participants__slidedesktop show';
+}
+nextParticipantsDesktop.onclick = function(){
+	nextSlideParticipantsDesktop();
+};
+previousParticipantsDesktop.onclick = function(){
+	previousSlideParticipantsDesktop();
+};
