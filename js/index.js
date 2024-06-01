@@ -81,7 +81,6 @@ var numberParticipantsDesktop = document.querySelector('.participants__numbersde
 
 function nextSlideParticipantsDesktop(){
 	goToSlideParticipantsDesktop(currentSlideParticipantsDesktop+1);
-	console.log(currentSlideParticipantsDesktop);
 	if(currentSlideParticipantsDesktop ==0){
 		numberParticipantsDesktop.innerHTML=currentSlideParticipantsDesktop+ 3 + " " + "/ " + "6";
 	}
